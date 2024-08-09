@@ -15,9 +15,7 @@ The app has a date colimn, a description column, a category column and an amount
 
 ## prerequisites
 
-    HTML
-    CSS
-    JavaScript
+    React.js
 
 ## System Requirements
 
