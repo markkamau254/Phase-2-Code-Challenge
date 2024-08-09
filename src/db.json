@@ -1,0 +1,95 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "date": "2024-08-08",
+      "description": "Paycheck from Bob's Burgers",
+      "category": "income",
+      "amount": "434"
+    },
+    {
+      "id": "2",
+      "date": "2024-08-07",
+      "description": "Grocery shopping",
+      "category": "Food",
+      "amount": 45.3
+    },
+    {
+      "id": "3",
+      "date": "2024-08-08",
+      "description": "Electricity bill",
+      "category": "Utilities",
+      "amount": 89
+    },
+    {
+      "id": "4",
+      "date": "2024-08-09",
+      "description": "Coffee with friends",
+      "category": "Entertainment",
+      "amount": 15.75
+    },
+    {
+      "id": "5",
+      "date": "2024-08-10",
+      "description": "Online course",
+      "category": "Education",
+      "amount": 120
+    },
+    {
+      "id": "6",
+      "date": "2024-08-11",
+      "description": "Fuel",
+      "category": "Transport",
+      "amount": 50
+    },
+    {
+      "id": "db7f",
+      "date": "0003-03-31",
+      "description": "footbal",
+      "category": "hobby",
+      "amount": 500
+    },
+    {
+      "id": "e19f",
+      "date": "0003-03-31",
+      "description": "footbal",
+      "category": "hobby",
+      "amount": 2000
+    },
+    {
+      "id": "77db",
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": null
+    },
+    {
+      "id": "fbeb",
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": null
+    },
+    {
+      "id": "fab6",
+      "date": "0002-02-22",
+      "description": "party after party",
+      "category": "sherehe",
+      "amount": 2000000
+    },
+    {
+      "id": "c6ae",
+      "date": "0003-02-22",
+      "description": "footbal",
+      "category": "hobby",
+      "amount": 3000
+    },
+    {
+      "id": "87fb",
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": null
+    }
+  ]
+}
