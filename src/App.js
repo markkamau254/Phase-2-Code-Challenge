@@ -103,7 +103,10 @@ function App() {
 
       <Table data={search(users)} onDelete={handleDelete} /> 
 
-      <div className="footer">THE IRON BANK OF FLATIRON 🏦</div>
+        <div className="footer">
+      THE IRON BANK OF FLATIRON <img src={BankLogo} alt="Iron Bank Logo" width="50" height="50" />
+      </div>
+                  
     </div>
   );
 }
