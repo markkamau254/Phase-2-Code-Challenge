@@ -45,6 +45,8 @@ table {
   margin: 0px 200px 0 200px;
   border-spacing: 15px;
   color: white;
+  position: relative;
+  left: -70px;
 }
 
 tr {
