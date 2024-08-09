@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# *THE IRON BANK OF FALTIRON*
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Description** :
+This is a simple bank-transactions record keeper application built with React.js. This application allows users to add transactions, delete transactions and search for the transactions they make.
+The app has a date colimn, a description column, a category column and an amount column.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Project Breakdown
+- ### **Home Page*
+   **Features** ⚙️
+- [x] **Search Bar** : Search transaction by entering transaction details on the input and click enter.
+- [x] **Input Fields** : Add transaction details in the input fields as labled.
+- [x] **Add Transaction** : Click this button to add transaction details in the form.
+- [x] **Delete Button** : Click _Delete_ button to delete a transaction.
 
-### `npm start`
+## prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    HTML
+    CSS
+    JavaScript
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## System Requirements
 
-### `npm test`
+- Node 18+
+- JSON Server
+- A browser capable of running JavaScript (Chrome, Firefox, Safari, or Edge)
+- Operating System (Windows 10+, MacOS, Linux, etc.)
+- A text editor capable of running JavaScript (Visual Studio Code, Vim, Nano, Emacs, Atom, Sublime Text, etc.)
+- RAM >= 4GB
+- Disk space >= 1GB
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To use this repo, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Alternative One
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1.  Open the terminal/CLI on your computer.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2.  If you don't have JSON server installed in the terminal, install it globally using the following command:
 
-### `npm run eject`
+        npm install -g json-server
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3.  Clone the repository by running the following command:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+        git clone https://github.com/markkamau254/Code-Challenge-3.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4.  Change directory to the repo folder:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+        cd deploying_a_local_server
 
-## Learn More
+5.  Open it in your Code Editor of choice. If you use VS Code, run the command:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+        code .
+    
+6   Run json-server, run the command:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+      json-server --watch src/db.json .
+      
+7   Open the app on your browser, run the command:
 
-### Code Splitting
+      npm start .
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Alternative Two
 
-### Analyzing the Bundle Size
+- On the top right corner of this page there is a button labelled Fork.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Click on that button to create a copy of the repository to your own account.
 
-### Making a Progressive Web App
+- Follow the process described in Alternative One above.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Remember to replace your username when cloning.
 
-### Advanced Configuration
+      git clone https://github.com/markkamau254/Code-Challenge-3.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+  
+## **You can check the deployed website by clicking the live link below** 👇 
+You can view the deployed project [here](https://markkamau254.github.io/Phase-2-Code-Challenge/).
 
-### Deployment
+##**Author**
+Mark Kamau
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
