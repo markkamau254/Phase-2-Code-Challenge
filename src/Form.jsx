@@ -54,7 +54,7 @@ function Form() {
           </section>
 
       <button type="submit" className='bts'>
-        SUBMIT
+          Add Transaction
       </button>
 
       </form>
