@@ -860,3 +860,8 @@ button,.bts::after {
   font-weight: weight;
   font-style: normal;
 }
+
+.footer img{
+  position: relative;
+  top: +10px;
+}
