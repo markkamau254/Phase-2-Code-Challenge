@@ -3,7 +3,7 @@ import usersData from "./db.json";
 import "./App.css";
 import Table from "./Table"; 
 import Form from "./Form";
-import BankLogo from './Bank Building.png'; 
+
 
 function App() {
   const [query, setQuery] = useState("");
@@ -127,10 +127,7 @@ function App() {
 
       <Table data={search(users)} onDelete={handleDelete} /> 
 
-      <div className="footer">
-        THE IRON BANK OF FLATIRON 
-        <img src={BankLogo} alt="Iron Bank Logo" width="50" height="50" />
-      </div>
+    
     </div>
   );
 }
