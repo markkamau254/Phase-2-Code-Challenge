@@ -73,7 +73,7 @@ To use this repo, follow these steps:
 
   
 ## **You can check the deployed website by clicking the live link below** 👇 
-You can view the deployed project [here](https://battlr-backend.vercel.app/users).
+You can view the deployed project [here](https://phase-2-code-challenge-six.vercel.app/).
 
 ##**Author**
 Mark Kamau
