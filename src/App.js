@@ -1,28 +1,52 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import usersData from "./db.json"; 
 import "./App.css";
 import Table from "./Table"; 
 import Form from "./Form";
+import BankLogo from './Bank Building.png'; 
 
 function App() {
   const [query, setQuery] = useState("");
-  const [users, setUsers] = useState(usersData.users); 
+  const [users, setUsers] = useState(usersData.users || []);  
   const keys = ["date", "description", "category", "amount"];
 
   const search = (data) => {
     return data.filter((item) =>
-      keys.some((key) => {
-      
-        return (
-          item[key] && item[key].toString().toLowerCase().includes(query)
-        );
-      })
+      keys.some((key) =>
+        item[key] && item[key].toString().toLowerCase().includes(query)
+      )
     );
   };
 
   const handleDelete = (id) => {
     const updatedUsers = users.filter((user) => user.id !== id);
     setUsers(updatedUsers);
+  };
+
+  useEffect(() => {
+    fetch("https://battlr-backend.vercel.app/users")
+      .then((response) => response.json())
+      .then((data) => setUsers(data))
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }, []);
+
+  const handleAddUser = (newUser) => {
+    fetch("https://battlr-backend.vercel.app/users", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newUser),
+    })
+    .then((response) => response.json())
+    .then((data) => {
+      setUsers((prevUsers) => [...prevUsers, data]);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
   };
 
   return (
@@ -99,14 +123,14 @@ function App() {
         </div>
       </div>
 
-      <Form />
+      <Form onAddUser={handleAddUser} /> {/* Pass the callback to the Form */}
 
       <Table data={search(users)} onDelete={handleDelete} /> 
 
-        <div className="footer">
-      THE IRON BANK OF FLATIRON <img src={BankLogo} alt="Iron Bank Logo" width="50" height="50" />
+      <div className="footer">
+        THE IRON BANK OF FLATIRON 
+        <img src={BankLogo} alt="Iron Bank Logo" width="50" height="50" />
       </div>
-                  
     </div>
   );
 }
