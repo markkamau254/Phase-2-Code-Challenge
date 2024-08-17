@@ -1,20 +1,14 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-function Form() {
-  const url = "http://localhost:3000/users"; // Ensure this endpoint is correct
+function Form({ onAddUser }) {  // Receive the callback function as a prop
+  const url = "https://the-iron-bank-backend.vercel.app/users"; 
   const [data, setData] = useState({
     date: "",
     description: "",
     category: "",
     amount: ""
   });
-
-
-
- 
-
-
 
   function submit(e) {
     e.preventDefault();
@@ -26,6 +20,7 @@ function Form() {
     })
       .then(res => {
         console.log(res.data);
+        onAddUser(res.data); // Call the callback with the new data
       })
       .catch(err => {
         console.error('Error:', err);
@@ -48,13 +43,13 @@ function Form() {
                 <input onChange={handle} id='category' value={data.category} type="text" className='btn' placeholder='Category' />
               
                 
-                <div class="input-wrapper">
+                <div className="input-wrapper">
                 <input onChange={handle} id='amount' value={data.amount} type="number" placeholder='Amount' className='Btn'/>
                 </div>
           </section>
 
       <button type="submit" className='bts'>
-          Add Transaction
+        Add Transaction
       </button>
 
       </form>
