@@ -3,7 +3,7 @@ import usersData from "./db.json";
 import "./App.css";
 import Table from "./Table"; 
 import Form from "./Form";
-
+import BankLogo from './Bank Building.png'; 
 
 function App() {
   const [query, setQuery] = useState("");
@@ -24,7 +24,7 @@ function App() {
   };
 
   useEffect(() => {
-    fetch("https://battlr-backend.vercel.app/users")
+    fetch("https://the-iron-bank-backend.vercel.app/users")
       .then((response) => response.json())
       .then((data) => setUsers(data))
       .catch((error) => {
@@ -33,7 +33,7 @@ function App() {
   }, []);
 
   const handleAddUser = (newUser) => {
-    fetch("https://battlr-backend.vercel.app/users", {
+    fetch("https://the-iron-bank-backend.vercel.app/users", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -127,6 +127,10 @@ function App() {
 
       <Table data={search(users)} onDelete={handleDelete} /> 
 
+      <div className="footer">
+        THE IRON BANK OF FLATIRON 
+        <img src={BankLogo} alt="Iron Bank Logo" width="50" height="50" />
+      </div>
     </div>
   );
 }
